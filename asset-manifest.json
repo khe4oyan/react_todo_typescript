@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react_todo_typescript/static/css/main.fd2fc2f0.css",
+    "main.js": "/react_todo_typescript/static/js/main.ca464860.js",
+    "index.html": "/react_todo_typescript/index.html",
+    "main.fd2fc2f0.css.map": "/react_todo_typescript/static/css/main.fd2fc2f0.css.map",
+    "main.ca464860.js.map": "/react_todo_typescript/static/js/main.ca464860.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd2fc2f0.css",
+    "static/js/main.ca464860.js"
+  ]
+}
