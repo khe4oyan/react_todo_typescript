@@ -1,0 +1,25 @@
+.controlPanel {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 9fr 1fr;
+	margin-bottom: 10px;
+}
+.controlPanel__input, 
+.controlPanel__button {
+	background: rgba(255, 255, 255, 0.116);
+	color: var(--color);
+	transition: .5s;
+}
+
+/* .controlPanel__input {} */
+.controlPanel__input:focus {
+	box-shadow: 0 0 10px var(--color);
+	background: none;
+}
+.controlPanel__button {
+	background-color: var(--color);
+	color: rgba(0, 0, 0, .7);
+}
+.controlPanel__button:hover {
+	box-shadow: 0 0 10px var(--color);
+}

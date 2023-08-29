@@ -1,0 +1,73 @@
+.todo {
+	color: var(--color);
+	text-shadow: 0px 0px 5px var(--color2);
+	padding: 10px 10px;
+	border: 2px solid var(--color);
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, .4);
+	display: grid;
+	grid-template-columns: 2fr 10fr 1fr;
+	margin-bottom: 5px;
+	transition: .3s;
+	border-radius: 100px 30px 30px 100px;
+}
+.todo:hover {
+	scale: 1.02;
+}
+.todo_undone {
+	--color: rgb(122, 122, 80);
+	text-shadow: none;
+}
+/* .todo_done {} */
+
+/* .todo__box {} */
+/* .todo__box_info {} */
+/* .todo__box_info__title {} */
+/* .todo__box_info__status {} */
+
+/* .todo__box_buttons {} */
+.todo__box_buttons__button {
+	border: 1px solid var(--color);
+	background: none;
+	color: var(--color);
+	width: 100%;
+	border-radius: 100px 30px 30px 100px;
+}
+.deleteButton {
+	--color: rgb(231, 67, 67);
+	margin-top: 3px;
+}
+.todo__circleBox {
+	position: relative;
+	padding: 10px;
+}
+.cyrcle_undone {
+	opacity: .5;
+	scale: .95;
+}
+.cyrcle_done {
+	transform: scale(.2);
+}
+.todo__circleBox__circle {
+	--size: 60px;
+	border-radius: 50px;
+	width: var(--size);
+	height: var(--size);
+	background: var(--color);
+}
+
+.cyrcle_done.todo__circleBox__circle {
+	animation: cyrcle linear infinite 3s;
+	transform: scale(.8);
+}
+
+@keyframes cyrcle {
+	50% {
+		transform: scale(1);
+		opacity: .5;
+	}
+	100% {
+		transform: scale(.8);
+		opacity: 1;
+	}
+}
